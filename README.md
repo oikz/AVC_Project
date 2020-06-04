@@ -1,7 +1,7 @@
 # AVC_Project
 AVC Group Project for Engineering 101
 
-Team Name: 
+Team Name: #include <Team26>
 Team Members & contact info:
 Jacob Chapman
 Charles Perera
@@ -11,19 +11,28 @@ Morgan Treleaven
 Communication tool:
 Discord
 
+Github: https://github.com/oikz/AVC_PROJECT
+
 # Roles:
 Jessica Karmawan - Project Manager (organising team meetings, reporting regularly on progress)
 
 Charles Perera - Software Architect (writing core code and extending functionality)
 
-Jacob Chapman - Software Architect & Software writing, testing and documentation (debugging software and committing to
+Jacob Chapman - Software Architect (partially shared) & Software writing, testing and documentation (debugging software and committing to
 git, writing test cases and documenting performance against milestones)
 
 Morgan Treleaven - Software writing, testing and documentation (debugging software and committing to
 git, writing test cases and documenting performance against milestones)
 
 
-Github: https://github.com/oikz/AVC_PROJECT
+# Role Jobs
+
+    Charles writes code for reading array of white pixels
+    Jacob writes code for making robot turn and figures out how to make robot turn
+    Jessica & Morgan person oversee/test bugs etc
+
+    Build on this for Completion and challenge
+
 
 
 # Due Dates:
@@ -60,8 +69,18 @@ Challenge Code/Testing       - Due Thursday 18th June
     Make robot able to pathfind based on presence of red outline of the course 
     Potentially make it always turn left in the case of multiple choices?
 
-Reflection
-    TBA
+Reflection                   - Due Wednesday 24th June
+Report should include following sections:
+    Task which your code solved
+    Approach your team took to solve the task: programming language, OS, hardware. Imagine that it was your choice.
+    Architecture - how your code is structured
+    Solution - what final version of software is capable of doing. Subsections: Image Processing and Motor Control. Algorithms you used.
+    Team dynamic how well team worked together and is team capable of doing bigger project
+    State Of The Art Review of autonomous driving software. Should include at least five references. Does not have to be very deep.
+    To do how your code can be adapted to autonomous driving, what should be added
+    Recommendations Go - no go for bigger project. 
+
+
 
 
 # Meeting Times:
