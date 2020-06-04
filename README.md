@@ -1,9 +1,9 @@
 # AVC_Project
 AVC Group Project for Engineering 101
 
-# Team Name: #include <Team26>
+# Team Name: #include \<Team26>
 
-# Team Members & contact info:
+# Team Members:
 * Jacob Chapman
 * Charles Perera
 * Jessica Karmawan
@@ -12,7 +12,7 @@ AVC Group Project for Engineering 101
 Communication tool:
 Discord
 
-Github: https://github.com/oikz/AVC_PROJECT
+Github: https://github.com/oikz/AVC_Project
 
 # Roles:
 * Jessica Karmawan - Project Manager (organising team meetings, reporting regularly on progress)
@@ -21,16 +21,15 @@ Github: https://github.com/oikz/AVC_PROJECT
 
 * Jacob Chapman - Software Architect (partially shared) & Software writing, testing and documentation (debugging software and committing to git, writing test cases and documenting performance against milestones)
 
-* Morgan Treleaven - Software writing, testing and documentation (debugging software and committing to
-* git, writing test cases and documenting performance against milestones)
+* Morgan Treleaven - Software writing, testing and documentation (debugging software and committing to git, writing test cases and documenting performance against milestones)
 
 
-# Role Jobs
+# Role Jobs (Initial)
 * Charles writes code for reading array of white pixels
 * Jacob writes code for making robot turn and figures out how to make robot turn
 * Jessica & Morgan person oversee/test bugs etc
 
-* Build on this for Completion and challenge
+* Build on this for Completion and Challenge
 
 
 
@@ -67,6 +66,8 @@ Github: https://github.com/oikz/AVC_PROJECT
 ## Challenge Code/Testing       - Due Thursday 18th June
 *    Make robot able to pathfind based on presence of red outline of the course 
 *    Potentially make it always turn left in the case of multiple choices?
+*    Also potentially make the robot always turn 90 degrees left when it sees the red somewhere in the middle of its FOV
+*    Theoretically robot should be able to navigate any course that only contains Red Walls
 
 ## Reflection                   - Due Wednesday 24th June
 * Report should include following sections:
@@ -80,8 +81,33 @@ Github: https://github.com/oikz/AVC_PROJECT
 *    Recommendations Go - no go for bigger project. 
 
 
+## Meeting Times:
+Roughly every 2 days starting 4th June at 3PM then any time
 
 
-# Meeting Times:
-    Roughly every 2 days starting 4th June at 3PM then any time
-    
+# Install
+
+## Windows (Can cause issues/not fully tested)
+* Method is not fully tested as working so may cause some issues that require troubleshooting (i.e. may require adding MinGW to system PATH)
+* Download SFML 
+* Install MinGW compiler that matches SFML (i.e. Download 64-bit 7.3.0 MinGW for 64-bit SFML)
+* Relevant MinGW download links available on SFML download page
+* Clone repository/download repository as ZIP
+* Compile and build with makefiles with mingw32-make for AVC_server and AVC_robot
+* Run server.exe
+* Run robot.exe
+
+## Mac
+* Install Homebrew  
+* Run ```Brew install sfml```  
+* Clone repository/Download repository as ZIP
+* Compile and build both AVC_server and AVC_robot using provided makefiles with ```make```
+* Run server
+* Run robot
+
+## Linux
+* Download SFML and unzip
+* Clone Repository/Download repository as ZIP
+* Compile and build AVC_server and AVC_robot with provided makefiles
+* Run server
+* Run robot
