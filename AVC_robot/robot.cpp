@@ -54,9 +54,9 @@ int main() {
         double error = middle - average;
         double vLeft2 = vLeft, vRight2 = vRight; // Create secondary variables for use later
         if (error <= 0) {//Adjusts left or right motor based on this information (unfinished)
-            vLeft = vLeft2 + 2;
+            vLeft = vLeft2 - error * 1.5;
         } else {
-            vRight = vRight2 + 2;
+            vRight = vRight2 + error * 1.5;
         }
 
 
