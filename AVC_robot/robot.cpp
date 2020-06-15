@@ -78,6 +78,7 @@ int main() {
             //Check if there are red pixels at a set point
 
             int leftPix = get_pixel(cameraView, 99, 2, 0);
+            set_pixel(cameraView, 99, 2, 255, 255, 255);
             if (leftPix > 220) {//Check if pixel is red and change leftRed to true if it is
                 leftRed = true;
             } else {
@@ -91,7 +92,7 @@ int main() {
                 rightRed = false;
             }
 
-            int centerPix = get_pixel(cameraView, 2, 75, 0);
+            int centerPix = get_pixel(cameraView, 75, 148, 0);
             if (centerPix > 220) {//Check if pixel is red and change centerRed to true if it is
                 centerRed = true;
             } else {
@@ -99,11 +100,14 @@ int main() {
             }
 
             if (leftRed == false && rightRed == true) {
-                //Change motors to turn left
+                vRight=vRight*1.25;
+                std::cout<<"turning left!"<<std::endl;
             } else if (leftRed == true && rightRed == false) {
-                //Change motors to turn right
+                vLeft = vLeft*1.25;
+                std::cout<<"turning right!"<<std::endl;
             } else if (leftRed==false && rightRed ==false && centerRed==true){
-                //Change motors to turn left
+                vRight=vRight*1.25;
+                std::cout<<"turning left!"<<std::endl;
             }
 
         } else {
