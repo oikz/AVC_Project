@@ -20,13 +20,58 @@ bool rightChallenge(){
 }
 
 bool centerChallenge(){
-    int centerPix = get_pixel(cameraView, 75, 148, 0);
-    if (centerPix > 220) {//Check if pixel is red and change centerRed to true if it is
+    int centerPix = get_pixel(cameraView, 2, 75, 0);
+    int centerWhite = get_pixel(cameraView, 2, 75, 3);
+    if (centerPix > 220 && centerWhite < 250) {//Check if pixel is red and change centerRed to true if it is
         return true;
     } else {
         return false;
     }
 }
+
+
+//Alternative Array version (need to change return stuff) i.e. return false if there are no 1s present in the array
+/*bool leftChallenge() {
+    int leftPix;
+    int *leftArray = new int[100];
+    for (int i = 0; i < 100; i++) {
+        leftPix = get_pixel(cameraView, 99, 2, 0);
+        if (leftPix > 220) {//Check if pixel is red and change leftRed to true if it is
+            leftArray[i] = 1;
+        } else {
+            leftArray[i] = 0;
+        }
+    }
+}
+
+bool rightChallenge() {
+    int rightPix;
+    int *rightArray = new int[100];
+    for (int i = 0; i < 100; i++) {
+        rightPix = get_pixel(cameraView, 99, 149, 0);
+        if (rightPix > 220) {//Check if pixel is red and change rightRed to true if it is
+            rightArray[i] = 1;
+        } else {
+            rightArray[i] = 0;
+        }
+    }
+}
+
+ //Location for this might be wrong
+bool centerChallenge() {
+    int centerPix;
+    int *centerArray = new int[150];
+    for (int i = 0; i < 150; i++) {
+        centerPix = get_pixel(cameraView, 99, 75, 0);
+
+        if (centerPix > 220) {//Check if pixel is red and change centerRed to true if it is
+            centerArray[i] = 1;
+        } else {
+            centerArray[i] = 0;
+        }
+    }
+}*/
+
 
 int main() {
     if (initClientRobot() != 0) {
