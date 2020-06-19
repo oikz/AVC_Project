@@ -92,9 +92,12 @@ Roughly every 2 days starting 4th June at 3PM then any time
 * Download SFML 
 * Install MinGW compiler that matches SFML (i.e. Download 64-bit 7.3.0 MinGW for 64-bit SFML) Versions must match!
 * Relevant MinGW download links available on SFML download page (in the red banner above the SFML downloads)
+* Add mingw location to system PATH variable located in System Properties advanced tab (Advanced system settings from the "system" page in control panel
 * Clone repository/download repository as ZIP
 * Edit makefile as required to point towards your SFML install folder
-* Compile and build with makefiles with mingw32-make for AVC_server and AVC_robot
+* Delete any .exe or .o files inside the folders before making
+* If using an IDE, replace "make" with mingw32-make in build settings
+* Compile and build with makefiles with mingw32-make in a terminal/cmd window or using an IDE such as geany for AVC_server and AVC_robot
 * Run server.exe
 * Run robot.exe
 
@@ -103,14 +106,16 @@ Roughly every 2 days starting 4th June at 3PM then any time
 * Run ```Brew install sfml``` inside a terminal
 * Clone repository/Download repository as ZIP
 * Edit makefile as required to point towards your SFML install folder
-* Compile and build both AVC_server and AVC_robot using provided makefiles with ```make```
+* Delete any .exe or .o files inside the folders before making
+* Compile and build both AVC_server and AVC_robot using provided makefiles with ```make``` inside a terminal window or an IDE such as geany
 * Run server
 * Run robot
 
-## Linux
+## Linux (Also untested)
 * Download SFML and unzip
 * Clone Repository/Download repository as ZIP
 * Edit makefile as required to point towards your SFML install folder
-* Compile and build AVC_server and AVC_robot with provided makefiles with ```make```
+* Delete any .exe or .o files inside the folders before making
+* Compile and build both AVC_server and AVC_robot with provided makefiles with ```make``` inside a terminal window or an IDE such as geany
 * Run server
 * Run robot
