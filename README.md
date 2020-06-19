@@ -69,7 +69,7 @@ Github: https://github.com/oikz/AVC_Project
 *    Also potentially make the robot always turn 90 degrees left when it sees the red somewhere in the middle of its FOV
 *    Theoretically robot should be able to navigate any course that only contains Red Walls
 
-## Reflection                   - Due Wednesday 24th June
+## Reflection (Individual)      - Due Wednesday 24th June
 * Report should include following sections:
 *    Task which your code solved
 *    Approach your team took to solve the task: programming language, OS, hardware. Imagine that it was your choice.
@@ -90,17 +90,19 @@ Roughly every 2 days starting 4th June at 3PM then any time
 ## Windows (Can cause issues/not fully tested)
 * Method is not fully tested as working so may cause some issues that require troubleshooting (i.e. may require adding MinGW to system PATH)
 * Download SFML 
-* Install MinGW compiler that matches SFML (i.e. Download 64-bit 7.3.0 MinGW for 64-bit SFML)
-* Relevant MinGW download links available on SFML download page
+* Install MinGW compiler that matches SFML (i.e. Download 64-bit 7.3.0 MinGW for 64-bit SFML) Versions must match!
+* Relevant MinGW download links available on SFML download page (in the red banner above the SFML downloads)
 * Clone repository/download repository as ZIP
+* Edit makefile as required to point towards your SFML install folder
 * Compile and build with makefiles with mingw32-make for AVC_server and AVC_robot
 * Run server.exe
 * Run robot.exe
 
 ## Mac
 * Install Homebrew  
-* Run ```Brew install sfml```  
+* Run ```Brew install sfml``` inside a terminal
 * Clone repository/Download repository as ZIP
+* Edit makefile as required to point towards your SFML install folder
 * Compile and build both AVC_server and AVC_robot using provided makefiles with ```make```
 * Run server
 * Run robot
@@ -108,6 +110,7 @@ Roughly every 2 days starting 4th June at 3PM then any time
 ## Linux
 * Download SFML and unzip
 * Clone Repository/Download repository as ZIP
-* Compile and build AVC_server and AVC_robot with provided makefiles
+* Edit makefile as required to point towards your SFML install folder
+* Compile and build AVC_server and AVC_robot with provided makefiles with ```make```
 * Run server
 * Run robot
